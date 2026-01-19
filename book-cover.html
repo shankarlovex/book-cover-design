@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C Programming Language | Book Cover</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --primary: #2563eb;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: #e2e8f0;
+}
+
+.dark {
+    --bg: #020617;
+    --card: #0f172a;
+    --primary: #38bdf8;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --border: #1e293b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+}
+
+.toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
+}
+
+/* FRONT */
+.badge {
+    background: rgba(37,99,235,0.15);
+    color: var(--primary);
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.features {
+    margin-top: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.features p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.author {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.author strong {
+    display: block;
+    color: var(--primary);
+    font-size: 16px;
+}
+
+/* BACK */
+.back-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin: 15px 0;
+}
+
+.specs {
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.specs p {
+    margin: 6px 0;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contact-item a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contact svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary);
+}
+
+.note {
+    margin-top: 20px;
+    background: rgba(37,99,235,0.1);
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle">
+    <button onclick="toggleTheme()">Toggle Light / Dark</button>
+</div>
+
+<div class="wrapper">
+
+    <!-- FRONT COVER -->
+    <div class="card">
+        <div>
+            <div class="badge">Programming Book</div>
+            <h1>C <span>Programming</span><br>Language</h1>
+            <div class="subtitle">Beginner to Intermediate Guide</div>
+
+            <div class="features">
+                <p>✔ Easy explanations</p>
+                <p>✔ Core C concepts</p>
+                <p>✔ Student focused</p>
+                <p>✔ Exam ready content</p>
+            </div>
+        </div>
+
+        <div class="author">
+            Author
+            <strong>Durgesh Gupta</strong>
+        </div>
+    </div>
+
+    <!-- BACK COVER -->
+    <div class="card">
+        <div>
+            <div class="back-title">About the Book</div>
+
+            <div class="description">
+                This book helps students learn C programming from the basics
+                with simple explanations and practical examples. It is ideal
+                for beginners and college students.
+            </div>
+
+            <div class="specs">
+                <p><strong>Pages:</strong> 70</p>
+                <p><strong>Paper:</strong> 70 GSM Natural</p>
+                <p><strong>Size:</strong> A4</p>
+                <p><strong>Binding:</strong> Perfect Binding</p>
+                <p><strong>Cover:</strong> 300 GSM, Matt Finish</p>
+            </div>
+
+            <div class="contact">
+    <div class="contact-item">
+        <!-- Instagram -->
+        <svg viewBox="0 0 24 24">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+        <a href="https://www.instagram.com/shankar__lovex/" target="_blank">
+            @shankar__lovex
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <!-- GitHub -->
+        <svg viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 0 0-3.16 19.48c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.9 1.52 2.36 1.08 2.94.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.1 2.64.64.7 1.02 1.59 1.02 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/>
+        </svg>
+        <a href="https://github.com/shankarlovex" target="_blank">
+            github.com/shankarlovex
+        </a>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="contact-item">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 2.9C8.8 2.9 3 8.6 3 15.7c0 2.8.7 5.4 2.1 7.7L3 29l5.8-2c2.2 1.2 4.7 1.8 7.2 1.8 7.2 0 13-5.7 13-12.8S23.2 2.9 16 2.9z"/>
+        </svg>
+        <a href="https://wa.me/918307790988" target="_blank">
+            +91 8307790988
+        </a>
+    </div>
+</div>
+
+        <div class="note">
+            If you want to buy this book, please message me on WhatsApp.
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
